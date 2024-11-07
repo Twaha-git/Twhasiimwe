@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  color: black;
+}
+.header .logo {
+  font-size: 24px;
+}
+.nav a {
+  color:black;
+  margin: 0 15px;
+  text-decoration: none;
+}
+.login-btn {
+  padding: 8px 15px;
+  color: black;
+  background-color: #ff6347;
+  border: none;
+  cursor: pointer;
+  border-radius: 15PX;
+}
+
+/* Hero Section */
+.hero {
+  background: url('hero-bg.jpg') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 150px 20px;
+}
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.search-bar input, .search-bar button {
+  padding: 10px;
+  margin: 5px;
+}
+.search-bar button {
+  background-color: #ff6347;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 15PX;
+}
+
+/* Popular Destinations */
+.popular-destinations {
+  padding: 50px 20px;
+  text-align: center;
+}
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+.destination-item {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Featured Accommodations */
+.featured-accommodations {
+  padding: 50px 20px;
+  text-align: center;
+}
+.accommodations-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.accommodation-item {
+  background-color: lightblue;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+.accommodation-item img {
+  width: 300px;
+  border-radius: 5px;
+}
+.accommodation-item button {
+  background-color: #ff6347;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Testimonials */
+.testimonials {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+}
+.testimonial-slider p {
+  margin: 10px 0;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+.footer-links a, .social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+body{background-image: url(BCK.JPG.jpg);}
+
+.pop1{color: white;}
+
+.contact-info {
+  margin: 20px 0;
+  color: #fff;
+}
+.contact-info p {
+  margin: 5px 0;
+}
+.contact-info a {
+  color: #ff6347;
+  text-decoration: none;
+}
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styling */					
+@media (max-width: 992px) {					
+  /* Adjust header and navigation for medium screens */					
+  .header {					
+    flex-direction: column;					
+    text-align: center;					
+  }					
+  .nav {					
+    display: flex;					
+    flex-wrap: wrap;					
+    justify-content: center;					
+  }					
+  .nav a {					
+    margin: 10px;					
+  }					
+  .hero h1 {					
+    font-size: 32px;					
+  }					
+}					
+					
+@media (max-width: 768px) {					
+  /* Adjust grids for smaller screens */					
+  .destination-grid {					
+    grid-template-columns: repeat(2, 1fr);					
+  }					
+  .accommodations-grid {					
+    grid-template-columns: 1fr;					
+  }					
+  .hero {					
+    padding: 100px 10px;	
+    border-radius: 20px;
+    border: #fff				
+  }					
+  .hero h1 {					
+    font-size: 28px;					
+  }					
+  .search-bar {					
+    flex-direction: column;	
+				
+  }					
+  .search-bar input, .search-bar button {					
+    width: 100%;					
+    margin: 5px 0;					
+  }					
+}					
+					
+@media (max-width: 480px) {					
+  /* Adjust for very small screens */					
+  .header .logo {					
+    font-size: 20px;					
+  }					
+  .hero h1 {					
+    font-size: 24px;					
+  }					
+  .popular-destinations, .featured-accommodations, .testimonials {					
+    padding: 30px 10px;					
+  }					
+  .footer {					
+    font-size: 14px;					
+  }					
+}					
